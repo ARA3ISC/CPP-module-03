@@ -1,8 +1,8 @@
-NAME= fixed
+NAME= claptrap
 CXX= c++
 RM= rm -rf
 CXXFLAGS= -Werror -Wextra -Wall -std=c++98
-SRC= main.cpp
+SRC= main.cpp ClapTrap.cpp
 OBJ=$(SRC:.cpp=.o)
 
 all: $(NAME)
