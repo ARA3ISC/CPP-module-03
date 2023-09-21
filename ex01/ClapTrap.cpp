@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:07:23 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 01:11:03 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/21 01:11:48 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,3 +87,4 @@ ClapTrap::~ClapTrap()
 {
 	std::cout << "ClapTrap destructor called" << std::endl;
 }
+

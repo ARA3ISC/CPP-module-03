@@ -6,15 +6,18 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 21:18:53 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/20 10:11:03 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/21 00:08:38 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-	ClapTrap claptrap("1");
+	ScavTrap strap("ashley");
 
-	claptrap.attack("2");
+	strap.attack("amy");
+	strap.takeDamage(99);
+	strap.beRepaired(1);
+
 }
