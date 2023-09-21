@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 00:15:17 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 00:59:58 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/21 01:38:30 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,29 @@ FragTrap::FragTrap(const std::string& _name):ClapTrap(_name)
 	this->attackDamage = 30;
 
 	std::cout << "FragTrap constructor called" << std::endl;
+}
+
+FragTrap::FragTrap(const FragTrap& old):ClapTrap(old)
+{
+	this->name = old.name;
+	this->hitPoints = old.hitPoints;
+	this->energyPoints = old.energyPoints;
+	this->attackDamage = old.attackDamage;
+
+	std::cout << "FragTrap copy constructor called" << std::endl;
+}
+
+FragTrap& FragTrap::operator=(const FragTrap& old)
+{
+	if (this == &old)
+		return *this;
+	this->name = old.name;
+	this->hitPoints = old.hitPoints;
+	this->energyPoints = old.energyPoints;
+	this->attackDamage = old.attackDamage;
+
+	std::cout << "FragTrap copy assignment operator called" << std::endl;
+	return *this;
 }
 
 void FragTrap::attack(const std::string& target)
@@ -36,7 +59,7 @@ void FragTrap::attack(const std::string& target)
 
 void FragTrap::highFivesGuys( void )
 {
-
+	std::cout << "FragTrap " << this->name << " set HightFive." << std::endl;
 }
 
 FragTrap::~FragTrap()

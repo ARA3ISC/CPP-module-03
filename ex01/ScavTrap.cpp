@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 10:19:53 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 00:03:45 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/21 01:29:52 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,30 @@ ScavTrap::ScavTrap(const std::string& _name): ClapTrap(_name)
 	this->hitPoints = 100;
 	this->energyPoints = 50;
 	this->attackDamage = 20;
-	std::cout << "ScavTrap constructor called" << std::endl;;
+	std::cout << "ScavTrap constructor called" << std::endl;
+}
+
+ScavTrap::ScavTrap(const ScavTrap& old):ClapTrap(old)
+{
+	this->name = old.name;
+	this->hitPoints = old.hitPoints;
+	this->energyPoints = old.energyPoints;
+	this->attackDamage = old.attackDamage;
+
+	std::cout << "ScavTrap copy constructor called" << std::endl;
+}
+
+ScavTrap& ScavTrap::operator=(const ScavTrap& old)
+{
+	if (this == &old)
+		return *this;
+	this->name = old.name;
+	this->hitPoints = old.hitPoints;
+	this->energyPoints = old.energyPoints;
+	this->attackDamage = old.attackDamage;
+
+	std::cout << "ScavTrap copy assignment operator called" << std::endl;
+	return *this;
 }
 
 void ScavTrap::attack(const std::string& target)

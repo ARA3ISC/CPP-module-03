@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:07:23 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 01:11:03 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/21 01:21:11 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ ClapTrap::ClapTrap(const ClapTrap& old)
 	this->energyPoints = old.energyPoints;
 	this->attackDamage = old.attackDamage;
 
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "ClapTrap copy constructor called" << std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& old)
@@ -41,7 +41,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& old)
 	this->energyPoints = old.energyPoints;
 	this->attackDamage = old.attackDamage;
 
-	std::cout << "Copy assignment operator called" << std::endl;
+	std::cout << "ClapTrap copy assignment operator called" << std::endl;
 	return *this;
 }
 

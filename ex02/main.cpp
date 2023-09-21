@@ -6,18 +6,19 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 21:18:53 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 00:08:38 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/21 01:38:46 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
-	ScavTrap strap("ashley");
+	FragTrap ftrap("ashley");
+	ftrap.attack("frtrap2");
+	ftrap.takeDamage(99);
+	ftrap.beRepaired(40);
 
-	strap.attack("amy");
-	strap.takeDamage(99);
-	strap.beRepaired(1);
+	// ftrap.highFivesGuys();
 
 }
