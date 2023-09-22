@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 00:15:17 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 01:38:30 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/22 17:01:19 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,21 @@ void FragTrap::attack(const std::string& target)
 	}
 	else
 		std::cout << "FragTrap " << this->name << " doesn't has enough energy points" << std::endl;
+}
+
+int FragTrap::getHitPoins()
+{
+	return this->hitPoints;
+}
+
+int FragTrap::getEnergyPoints()
+{
+	return this->energyPoints;
+}
+
+int FragTrap::getAttackDamage()
+{
+	return this->attackDamage;
 }
 
 void FragTrap::highFivesGuys( void )
