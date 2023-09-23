@@ -6,11 +6,15 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:07:23 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 01:22:12 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/22 22:00:45 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap() {
+	std::cout << "ClapTrap default constructor called" << std::endl;
+}
 
 ClapTrap::ClapTrap(const std::string& _name)
 {

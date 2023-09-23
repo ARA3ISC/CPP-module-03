@@ -6,21 +6,27 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 02:02:46 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/22 17:01:59 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/22 22:11:26 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap(const std::string& _name)
-	: ClapTrap(_name + "_clap_name"), ScavTrap(_name), FragTrap(_name)
-{
-	this->name = _name;
-	this->hitPoints = FragTrap::hitPoints;
-	this->energyPoints = FragTrap::energyPoints;
-	this->attackDamage = FragTrap::attackDamage;
+DiamondTrap::DiamondTrap() {
+	std::cout << "DiamondTrap default constructor called" << std::endl;
+}
 
-	std::cout << "DiamondTrap constructor called" << std::endl;
+DiamondTrap::DiamondTrap(const std::string& _name)
+	: ClapTrap(_name + "_clap_name"), FragTrap(_name), ScavTrap(_name)
+{
+	// (void)_name;
+	// this->_name = _name;
+	// this->hitPoints = FragTrap::hitPoints;
+	// this->energyPoints = ScavTrap::energyPoints;
+	// this->attackDamage = FragTrap::attackDamage;
+
+	// std::cout << "DiamondTrap constructor called" << std::endl;
+	std::cout << "name : " << this->name << std::endl;
 
 }
 

@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 21:18:53 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/22 16:44:01 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/22 22:11:35 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 int main()
 {
-	DiamondTrap dt("dt");
+	// DiamondTrap dt("dt");
+	FragTrap ft("make");
 
-	std::cout << dt.getHitPoins() << std::endl;
+	// std::cout << dt.getEnergyPoints() << std::endl;
 
 	// ftrap.highFivesGuys();
 
