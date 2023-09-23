@@ -12,6 +12,12 @@ class FragTrap : virtual public ClapTrap
 		FragTrap(const FragTrap& old);
 		FragTrap& operator=(const FragTrap& old);
 		void attack(const std::string& target);
+		int	getHitPoints(void) const {
+			return (this->hitPoints);
+		}
+		int	getAttackDamage(void) const {
+			return (this->attackDamage);
+		}
 		virtual ~FragTrap();
 
 
