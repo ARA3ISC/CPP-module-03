@@ -6,11 +6,16 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:07:23 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/21 01:19:02 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:50:01 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap()
+{
+	std::cout << "ClapTrap default constructor called" << std::endl;
+}
 
 ClapTrap::ClapTrap(const std::string& _name)
 {
@@ -45,7 +50,6 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& old)
 	return *this;
 }
 
-
 void ClapTrap::attack(const std::string& target)
 {
 	if (this->energyPoints > 0 && this->hitPoints > 0)
@@ -63,6 +67,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 	if ((amount - this->hitPoints) <= 0)
 	{
 		std::cout << "ClapTrap " << this->name << " was attacked and died 💀" << std::endl;
+		this->hitPoints -= amount;
 	}
 	else
 	{
@@ -87,4 +92,3 @@ ClapTrap::~ClapTrap()
 {
 	std::cout << "ClapTrap destructor called" << std::endl;
 }
-
