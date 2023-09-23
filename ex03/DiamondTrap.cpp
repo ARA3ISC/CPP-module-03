@@ -6,7 +6,7 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 02:02:46 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/23 14:19:21 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:39:47 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ DiamondTrap::DiamondTrap(const std::string& _name)
 	: ClapTrap(_name + "_clap_name"), ScavTrap(_name)
 {
 	this->name = _name;
-	FragTrap	obj(_name);
+	FragTrap	obj(_name); 
 	this->hitPoints = obj.getHitPoints();
 	this->attackDamage = obj.getAttackDamage();
 
