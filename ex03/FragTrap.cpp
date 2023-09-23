@@ -6,17 +6,13 @@
 /*   By: maneddam <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 00:15:17 by maneddam          #+#    #+#             */
-/*   Updated: 2023/09/23 13:25:25 by maneddam         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:20:18 by maneddam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap() {
-	// this->hitPoints = 100;
-	// this->energyPoints = 100;
-	// this->attackDamage = 30;
-
 	std::cout << "FragTrap default constructor called" << std::endl;
 }
 
@@ -63,21 +59,6 @@ void FragTrap::attack(const std::string& target)
 	else
 		std::cout << "FragTrap " << this->name << " doesn't has enough energy points" << std::endl;
 }
-
-// int FragTrap::getHitPoins()
-// {
-// 	return this->hitPoints;
-// }
-
-// int FragTrap::getEnergyPoints()
-// {
-// 	return this->energyPoints;
-// }
-
-// int FragTrap::getAttackDamage()
-// {
-// 	return this->attackDamage;
-// }
 
 void FragTrap::highFivesGuys( void )
 {
