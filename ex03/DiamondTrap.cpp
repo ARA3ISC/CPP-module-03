@@ -20,7 +20,7 @@ DiamondTrap::DiamondTrap(const std::string& _name)
 	: ClapTrap(_name + "_clap_name"), ScavTrap(_name)
 {
 	this->name = _name;
-	FragTrap	obj(_name); 
+	FragTrap	obj(_name);
 	this->hitPoints = obj.getHitPoints();
 	this->attackDamage = obj.getAttackDamage();
 

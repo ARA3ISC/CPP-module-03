@@ -65,6 +65,15 @@ void FragTrap::highFivesGuys( void )
 	std::cout << "FragTrap " << this->name << " set HightFive." << std::endl;
 }
 
+int FragTrap::getHitPoints() const
+{
+	return (this->hitPoints);
+}
+
+int	FragTrap::getAttackDamage(void) const {
+	return (this->attackDamage);
+}
+
 FragTrap::~FragTrap()
 {
 	std::cout << "FragTrap destructor called" << std::endl;
